@@ -1,0 +1,97 @@
+﻿h1 {
+    margin-top: 0px;
+    margin-bottom: 10px
+}
+h2 {
+    font-family: Arial;
+}
+h3 {
+    margin-top: 5px;
+    margin-bottom: 5px;
+}
+.established {
+    font-style:italic;
+}
+.img-header{
+    width: 80px;
+    height: 80px;
+    margin:auto;
+    border:double;
+    
+}
+
+h1,h2,h3,p{
+    text-align: center;
+}
+.menu {
+    background-color: lightgoldenrodyellow;
+    width: 80%;
+    margin-left: auto;
+    margin-right: auto;
+    padding: 20px;
+    max-width: 500px;
+}
+.icons {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width:80px;
+    height:80px;
+}
+.items p {
+    display: inline-block;
+    margin-top: 5px;
+    margin-bottom: 5px;
+    font-family: Arial;
+}
+
+.quantity1 {
+    text-align: right;
+    width: 80%;
+    display: inline-block;
+    margin-right:24px;
+}
+.quantity2 {
+    text-align: right;
+}
+.quantity3{
+    text-align: center;
+    width: 120%;
+    display: inline-block;
+    margin-left:25%;
+
+}
+.pickels, .starters, .sweets, .mfreshner {
+    text-align: left;
+    width: 75%;
+}
+.price250 {
+    text-align: left;
+    margin-right:20px;
+    width:0;
+}
+.price500 {
+    text-align: center;
+    margin-left:50px;
+} 
+.priceperplate{
+    text-align:center;
+    margin-left:35px;
+}
+hr{
+    height: 2px;
+    background-color: black;
+    border-color:black;
+}
+
+/*FOOTER*/
+.contactus{
+    font-size:20px;
+    font-weight:bold;
+    margin-bottom: 5px;
+}
+.contact{
+    font-size:18px;
+    margin-top:5px;
+    margin-bottom:5px;
+}
