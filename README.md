@@ -1,2 +1,2 @@
-# HTML-CSS-Projects
-- Projects are Build and Designed in Frontend Technology HTML and CSS
+# HTML-CSS-Javascript Projects
+- Projects are Build and Designed in Frontend Technology HTML,CSS and Javascript
