@@ -1,0 +1,393 @@
+﻿body {
+    background-color: #000000;
+    overflow-x: hidden;
+}
+/*--Navigation--*/
+#nav-bar {
+    position: sticky;
+    top: 0%;
+    z-index: 5;
+}
+.navbar-brand img {
+    height: 90px;
+    padding-left: 30px;
+}
+.navbar-nav li {
+    padding: 10px;
+    text-align:left;
+}
+#nav-bar ul li a:hover,
+#nav-bar ul li a:focus,
+#nav-bar ul li a.active {
+    color: white;
+}
+.navbar {
+    background: #CC99CC;
+}
+.nav-link {
+    color: #000000;
+    font-size: 20px;
+    font-weight: 500;
+}
+
+/*--Promo Section--*/
+#promo {
+    background-image: linear-gradient(rgba(0,0,0,0.7), rgba(0,0,0,0.7)), url(images/gym-wallper.jpg);
+    background-size: cover;
+    background-position: center;
+    color: #fff;
+    background-attachment: scroll;
+    text-align: center;
+    padding: 300px;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-size: 39px;
+}
+#promo h1 {
+        text-align: center;
+        color: #fff;
+}
+.btn {
+    background-color: #660066;
+    color:#fff;
+}
+
+/*--About Us--*/
+#about {
+    background-image: linear-gradient(rgba(0,0,0,0.7), rgba(0,0,0,0.7)), url(images/gym-about.jpg);
+    background-size: cover;
+    background-position:top;
+    background-attachment:scroll;
+    padding-top:20px;
+
+}
+.about-content h2 {
+    color: #CC99CC;
+    padding-top: 5px;
+    padding-bottom: 5px;
+}
+.about-content {
+    padding-bottom: 200px;
+    font-size: 20px;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    color: #fff;
+}
+/*--About Content Slider--*/
+#content {
+    padding-top: 50px;
+    padding-bottom: 50px;
+    background-color: #000000;
+    color:#CC99CC;
+}
+.about-gym {
+    display: inline-block;
+    width: 20%;
+    background-color: #660066;
+    color: #fff;
+    text-align: center;
+    padding: 10px;
+    border-radius: 10px;
+    box-shadow: 10px 13px 13px #140c0c;
+    margin-top: 20px;
+    margin-left: 10%;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+}
+.about-gym img {
+     width: 50%;
+     border-radius: 10px;
+ }
+.about-gym h4 {
+     color: #000000;
+}
+
+#slider {
+    width:100%;
+}
+
+/*--Services--*/
+#service h1 {
+    text-align: center;
+    color: #CC99CC;
+    padding-bottom: 10px;
+}
+#service h1::after {
+     content: '';
+     background: #660066;
+     display: block;
+     height: 3px;
+     width: 170px;
+     margin: 20px auto 5px;
+    }
+#service p {
+    text-align: center;
+    color: #fff;
+    padding-top: 1px;
+    font-size: 20px;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+}
+span {
+    color: #FF0000;
+}
+
+#services {
+    display: table;
+    width: 100%;
+}
+.our-services {
+    display: table-cell;
+    padding: 16px;
+    width: 20%;
+    background-color: #000000;
+    text-align: center;
+    color: white;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+}
+.our-services img {
+        width: 50%;
+        border-radius: 60px;
+}
+.our-services h3 {
+        color: #000000;
+        font-size: 20px;
+        padding-top: 5px;
+}
+.our-services li {
+        margin-left: 20px;
+        margin-right: 20px;
+        padding: 2px;
+}
+
+/*--Membership--*/
+.marquee {
+    background-color: #000000;
+    overflow: hidden;
+    position: absolute;
+    top:20%;
+    left:50%;
+    transform:translate(-50%, -50%);
+    height: 50px;
+    width: 100%;
+    /* Full width of its parent */
+    white-space: nowrap;
+}
+.marquee p {
+    position: absolute;
+    width: auto;
+    height: 100%;
+    margin: 0;
+    line-height: 50px;
+    text-align: center;
+    color: #CC99CC;
+   /* Start off the right edge */
+    transform: translateX(100%);
+   /* Animate to the left */
+    animation: bouncing-text 10s ease-in-out infinite alternate
+ }
+@keyframes bouncing-text {
+    0% {
+        transform: translateX(100%);
+    }
+
+    100% {
+        transform: translateX(-100%);
+    }
+}
+#offer-promo {
+    background-image:linear-gradient(rgba(0,0,0,0.7), rgba(0,0,0,0.7)), url(images/affomembership.jpg);
+    background-size:cover;
+    background-position:top;
+    background-repeat:no-repeat;
+    background-attachment:fixed;
+    height:340vh;
+
+}
+
+/*--Membership Offers--*/
+table{
+    position:absolute;
+    top:180px;
+    left:16px;
+    width:40%;
+    margin:0 auto;
+}
+caption {
+    caption-side: top;
+    padding: 5px;
+    font-weight: bold;
+    font-size: larger;
+    text-align: center;
+    color: #CC99CC;
+}
+th {
+    background-color: #f2f2f2;
+    font-weight:bold;
+}
+th,
+td {
+    border: 1px solid #ddd;
+    padding: 10px;  
+    text-align:center;
+
+}
+tr:nth-child(1) {
+    background-color: #cfe2f3;
+}
+tr:nth-child(2) {
+    background-color: #f9cb9c;
+}
+
+tr:nth-child(3) {
+    background-color: #d9ead3;
+}
+
+tr:nth-child(4) {
+    background-color: #f4cccc;
+}
+tr:nth-child(5) {
+    background-color: #cfe2f3;
+}
+tr:nth-child(6) {
+    background-color: #f9cb9c;
+}
+
+tr:hover {
+    background-color: #CC99CC;
+}
+
+/*--Membership Offer Form--*/
+.membership-form {
+    position: absolute;
+    top: 30%;
+    left:60%;
+}
+.membership-form h3 {
+    color: #CC99CC;
+    font-size: larger;
+    font-weight: bold;
+    text-align: left;
+    padding: 5px;
+    }
+.membership-form h5{
+    color:#CC99CC;
+    text-align:center;
+
+}
+#member-contact-form {
+   padding:2px;
+}
+.form-group {
+    display:flex; 
+    flex-direction: row; 
+    justify-content: center;
+    align-items: center;
+}
+label {
+    font-family: Georgia, "Times New Roman", Times, serif;
+    font-size: 18px;
+    color: #fff;
+    width: 150px;
+   
+}
+input[type=radio]{
+    margin-right:10px;
+}
+input[type=text], input[type=date], input[type=email], input[type=number], input[type=text] {
+    border: 5px solid #660066;
+}
+select{
+    border-radius:5px;
+    border-color:#660066;
+}
+textarea{
+    border:5px solid #660066;
+}
+.membership-form ul {
+        list-style: none;
+}
+.button{
+    position:absolute;
+    bottom:-55px;
+    left:16px;
+}
+
+/*--Our Team--*/
+#team h1 {
+    text-align: center;
+    color: #CC99CC;
+    padding-bottom: 10px;
+}
+
+#team h1::after {
+     content: '';
+     background: #660066;
+     display: block;
+     height: 3px;
+     width: 170px;
+     margin: 20px auto 5px;
+    }
+.profile-pic {
+    display: inline-block;
+    width: 30%;
+    margin: 9% 9%;
+    background-color: #660066;
+    color: white;
+    text-align: center;
+    padding: 10px;
+    border-radius: 10px;
+    box-shadow: 10px 13px 13px #140c0c;
+    margin-top: 20px;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+}
+
+.profile-pic li {
+     list-style:none;
+    display: inline-block;
+ }
+
+.profile-pic li a {
+      text-align:center;
+      text-decoration:none;
+      color: lightgray;
+}
+
+.profile-pic img {
+        width: 60%;
+        border-radius: 20px;
+}
+
+.profile-pic h3 {
+        color: #000000;
+        font-size: 30px;
+        text-shadow: 0px 2px 9px rgb(255,255,255);
+}
+#team a[href="#"] {
+    font-size: 20px;
+}
+
+/*--Contact Us--*/
+#contact {
+    padding-top: 100px;
+    padding-bottom: 100px;
+}
+#contact h3{
+    color:#CC99CC;
+}
+
+#contact-form {
+    padding: 15px;
+}
+
+.form-control {
+    border-radius: 2px;
+}
+
+::placeholder {
+    color: #999;
+}
+
+.follow {
+    background: #660066;
+    color: #fff;
+    margin: 15px;
+    padding: 10px;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+}

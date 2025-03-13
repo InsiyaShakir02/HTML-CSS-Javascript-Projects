@@ -1,0 +1,317 @@
+﻿<!DOCTYPE html>
+
+<html lang="en" xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/css/bootstrap.min.css" integrity="sha384-xOolHFLEh07PJGoPkLv1IbcEPTNtaed2xpHsD9ESMhqIYd0nLMwNLD69Npy4HI+N" crossorigin="anonymous">
+    <link rel="stylesheet" href="style.css" />
+    <script src="https://kit.fontawesome.com/699567db1c.js" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/jquery@3.5.1/dist/jquery.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js" integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/js/bootstrap.min.js" integrity="sha384-+sLIOodYLS7CIrQpBjl+C7nPvqq+FbNUBDunl/OZv93DB7Ln/533i8e/mZXLi/P+" crossorigin="anonymous"></script>
+    <title>GYM Club</title>
+</head>
+<body>
+    <!-- Navigation Section -->
+    <section id="nav-bar">
+        <nav class="navbar navbar-expand-lg navbar-light">
+            <a class="navbar-brand" href="#"><img src="images/gym-logo.jpg" alt="logo" /></a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="#navbarNav"
+                    aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div id="navbarNav" class="collapse navbar-collapse">
+                <ul class="navbar-nav ml-auto">
+                    <li class="navbar-item">
+                        <a class="nav-link" href="home.html">Home</a>
+                    </li>
+                    <li class="navbar-item">
+                        <a class="nav-link" href="aboutus.html">About Us</a>
+                    </li>
+                    <li class="navbar-item">
+                        <a class="nav-link" href="services.html">Services</a>
+                    </li>
+                    <li class="navbar-item">
+                        <a class="nav-link active" href="membership.html">Membership</a>
+                    </li>
+                    <li class="navbar-item">
+                        <a class="nav-link" href="trainers.html">Trainers</a>
+                    </li>
+                    <li class="navbar-item">
+                        <a class="nav-link" href="contactus.html">Contact Us</a>
+                    </li>
+                    <li>
+                        <a href="contactus.html" target="_blank" class="btn">Sign Up</a>
+                    </li>
+                    <li>
+                        <a href="membership.html" target="_blank" class="btn">Sign In</a>
+                    </li>
+                </ul>
+            </div>
+        </nav>
+    </section>
+
+    <!-- Membership offer Section -->
+   <section>
+        <section id="offer-promo">
+            <div class="container">
+                <div class="marquee" scrollamount="20">
+                    <p>
+                        <strong>Get 2 Days Trial Free!! - Visit Now ** Get 2 Days Trial Free!! - Visit Now ** Get 2 Days Trial Free!! - Visit Now</strong>
+                    </p>
+                </div>
+                <table>
+                    <caption>Train Smart, Pay Less – Grab the Best Deal!</caption>
+                    <thead>
+                        <tr>
+                            <th>Offers</th>
+                            <th>Basic(<i>includes for beginners, floor exercise and many more...</i>)</th>
+                            <th>Standard(<i>includes group classes, basic gym equipments and many more...</i>)</th>
+                            <th>Premium(<i>includes Personal training, nutrition plans and many more...</i>)</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>Single</td>
+                            <td>Rs.2000</td>
+                            <td>Rs.5000</td>
+                            <td>Rs.10000</td>
+                        </tr>
+                        <tr>
+                            <td>Monthly</td>
+                            <td>Rs.4000</td>
+                            <td>Rs.7000</td>
+                            <td>Rs.140000</td>
+                        </tr>
+                        <tr>
+                            <td>Quartely</td>
+                            <td>Rs.6000</td>
+                            <td>Rs.9000</td>
+                            <td>Rs.18000</td>
+                        </tr>
+                        <tr>
+                            <td>Yearly</td>
+                            <td>Rs.8000</td>
+                            <td>Rs.11000</td>
+                            <td>Rs.20000</td>
+                        </tr>
+                        <tr>
+                            <td>Couple</td>
+                            <td>Rs.10000</td>
+                            <td>Rs.13000</td>
+                            <td>Rs.22000</td>
+                        </tr>
+                        <tr>
+                            <td>Group</td>
+                            <td>Rs.12000</td>
+                            <td>Rs.15000</td>
+                            <td>Rs.24000</td>
+                        </tr>
+                    </tbody>
+                </table>
+                <div class="button">
+                    <button type="submit" class="btn">Register Now</button>
+                    <button type="submit" class="btn">Join Free Trail</button>
+                </div>
+
+                <!-- Membership offer form for Register -->
+
+                <div class="membership-form">
+                    <h3>Grab Exclusive Offers – Register Now & Transform Today!</h3>
+                    <div class="row">
+                        <div class="col-md-6" id="contact-form">
+                            <form id="member-contact-form" action="#">
+                                <h5>** Personal Details **</h5>
+                                <div class="form-group">
+                                    <label for="username">Enter Name: </label>
+                                    <input class="form-control" type="text" name="username" id="username" placeholder="Enter full name" required />
+                                </div>
+                                <div class="form-group">
+                                    <label for="dateofbirth">Enter DOB: </label>
+                                    <input class="form-control" type="date" name="dateofbirth" id="dateofbirth" required />
+                                </div>
+                                <div class="form-group">
+                                    <label for="gender">Gender: </label>
+                                    <select class="form-control" id="gender" name="gender">
+                                        <option value="male">Male</option>
+                                        <option value="female">Female</option>
+                                        <option value="other">Other</option>
+                                    </select>
+                                </div>
+
+                                <div class="form-group">
+                                    <label for="email">Email: </label>
+                                    <input class="form-control" type="email" name="email" id="email" placeholder="Enter email" required />
+                                </div>
+                                <div class="form-group">
+                                    <label for="phone">Phone: </label>
+                                    <input class="form-control" type="number" name="phone" id="phone" placeholder="Ex. 9098001240" required />
+                                </div>
+                                <div class="form-group">
+                                    <label for="address">Address: </label>
+                                    <input class="form-control" type="text" name="address" id="address" placeholder="Enter address" required />
+                                </div>
+                                <div class="form-group">
+                                    <label for="bloodgroup">Blood Group: </label>
+                                    <input class="form-control" type="text" name="bloodgroup" id="bloodgroup" placeholder="Enter blood group " required />
+                                </div>
+                                <div class="form-group">
+                                    <label for="weight">Weight: </label>
+                                    <input class="form-control" type="number" name="weight" id="weight" placeholder="Enter weight" required />
+                                </div>
+                                <div class="form-group">
+                                    <label for="height">Height: </label>
+                                    <input class="form-control" type="number" name="height" id="height" placeholder="Enter height" required />
+                                </div>
+                                <h5>** Membership Details **</h5>
+                                <div class="form-group">
+                                    <label for="duration">Duration: </label>
+                                    <select class="form-control" id="duration" name="duration">
+                                        <option value="monthly">Monthly</option>
+                                        <option value="quartly">Quartely</option>
+                                        <option value="yearly">Yearly</option>
+                                    </select>
+                                </div>
+                                <div class="form-group">
+                                    <label for="plans">Plans: </label>
+                                    <select class="form-control" id="plans" name="plans">
+                                        <option value="basic">Basic</option>
+                                        <option value="standard">Standard</option>
+                                        <option value="premium">Premium</option>
+                                    </select>
+                                </div>
+                                <div class="form-group">
+                                    <label for="time">Workout Time: </label>
+                                    <select class="form-control" id="time" name="time">
+                                        <option value="morning">Morning</option>
+                                        <option value="afternoon">Afternoon</option>
+                                        <option value="evening">Evening</option>
+                                    </select>
+                                </div>
+                                <h5>** Fitness Goals and Preferences **</h5>
+                                <div class="form-group">
+                                    <label for="">Fitness Goal: </label>
+                                    <ul>
+                                        <li>
+                                            <input type="checkbox" id="weightloss" name="weightloss" value="Weight Loss">
+                                            <label for="weightloss"> Weight Loss</label><br>
+
+                                        </li>
+                                        <li>
+                                            <input type="checkbox" id="Weight Gain" name="weightgain" value="Weight Gain">
+                                            <label for="weightgain"> Weight Gain</label><br>
+                                        </li>
+                                        <li>
+                                            <input type="checkbox" id="musclegain" name="musclegain" value="Muscle Gain">
+                                            <label for="musclegain"> Muscle Gain</label><br>
+                                        </li>
+                                        <li>
+                                            <input type="checkbox" id="endurance" name="endurance" value="Endurance">
+                                            <label for="endurance"> Endurance</label><br>
+                                        </li>
+                                        <li>
+                                            <input type="checkbox" id="generalfitness" name="generalfitness" value="General Fitness">
+                                            <label for="generalfitness"> General Fitness</label><br>
+                                        </li>
+                                        <li>
+                                            <input type="checkbox" id="others" name="others" value="Others">
+                                            <label for="others"> Others</label><br>
+                                        </li>
+                                    </ul>
+                                </div>
+                                <div class="form-group">
+                                    <label for="gym">Workouts: </label>
+                                    <ul>
+                                        <li>
+                                            <input type="checkbox" id="gym" name="gym" value="Gym">
+                                            <label for="gym"> GYM</label><br>
+                                        </li>
+                                        <li>
+                                            <input type="checkbox" id="yoga" name="yoga" value="Yoga">
+                                            <label for="yoga"> Yoga</label><br>
+                                        </li>
+                                        <li>
+                                            <input type="checkbox" id="zumba" name="zumba" value="Zumba">
+                                            <label for="zumba"> Zumba</label><br>
+                                        </li>
+                                        <li>
+                                            <input type="checkbox" id="pilates" name="pilates" value="Pilates">
+                                            <label for="pilates"> Pilates</label><br>
+                                        </li>
+                                        <li>
+                                            <input type="checkbox" id="floorexercise" name="floorexercise" value="Floor Exercise">
+                                            <label for="floorexercise">Floor Exercise</label><br>
+                                        </li>
+                                        <li>
+                                            <input type="checkbox" id="others" name="others" value="Others">
+                                            <label for="others"> Others</label><br>
+                                        </li>
+                                    </ul>
+                                </div>
+                                <div class="form-group">
+                                    <label for="yes">Personal Trainer Required: </label>
+                                    <ul>
+                                        <li>
+                                            <input type="checkbox" id="yes" name="yes" value="Yes">
+                                            <label for="yes"> Yes</label><br>
+                                        </li>
+                                        <li>
+                                            <input type="checkbox" id="yoga" name="yoga" value="No">
+                                            <label for="no"> No</label><br>
+                                        </li>
+                                    </ul>
+                                </div>
+                                <h5>** Health and Medical Info **</h5>
+                                <div class="form-group">
+                                    <label for="textarea">Medical Condition: </label>
+                                    <textarea class="form-control" rows="4" cols="100" placeholder="Any Medical Condition"></textarea><br />
+                                </div>
+                                <div>
+                                    <label for="emrphone">Emergency Contact: </label>
+                                    <input class="form-control" type="number" name="emrphone" id="emrphone" placeholder="Ex. 9098001240" required /><br>
+                                </div>
+                                <h5>** Payment and Agreement **</h5>
+                                <div class="form-group">
+                                    <label for="payment_method">Payment Method: </label>
+                                    <input type="radio" id="card" name="payment_method" value="Debit">
+                                    <label for="debit">Debit</label><br>
+                                    <input type="radio" id="card" name="payment_method" value="Credit">
+                                    <label for="credit">Credit</label><br>
+                                    <input type="radio" id="upi" name="payment_method" value="UPI">
+                                    <label for="upi">UPI</label><br>
+                                    <input type="radio" id="cash" name="payment_method" value="Cash">
+                                    <label for="cash">Cash</label><br>
+                                    <input type="radio" id="others" name="payment_method" value="others">
+                                    <label for="others">Others</label><br>
+                                </div>
+                                <div class="form-group">
+                                    <label for="textarea">Any Other Query: </label>
+                                    <textarea class="form-control" rows="4" cols="100" placeholder="Your comment"></textarea>
+                                </div>
+                                <div class="form-group">
+                                    <ul>
+                                        <li>
+                                            <input type="checkbox" id="termsandconditions" name="termsandconditions" value="Agree Terms and Condition">
+                                            <label for="termsandconditions">Agree Terms and Condition</label><br>
+                                        </li>
+                                    </ul>
+
+                                </div>
+                                <div class="form-group">
+                                    <button type="submit" class="btn" style="margin-right:10px;">Submit</button>
+                                    <button type="submit" class="btn">Cancel</button>
+                                </div>
+
+                            </form>
+                        </div>
+                    </div>
+                </div>-
+            </div>
+        </section>
+</section>
+   
+                 
+
+</body>
+</html>
